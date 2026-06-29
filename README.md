@@ -92,10 +92,10 @@ Running `python -m ingestion.run_all` generates two artifacts in `processed/`, b
 
 ## Limitations
 
-- **Thin sample sizes**: The dataset contains 50 FSRs; no service type has more than a few invoiced records per currency. Ranges are wide and confidence is low by design — the architecture is correct, the data just needs to grow.
+- **Thin sample sizes**: The dataset contains 50 FSRs, no price signal in many of them, the data just needs to grow.
 - **Image-only PDF specs**: Technical specifications embedded only in diagrams cannot be extracted by any text parser. The agent will say so rather than fabricate.
 - **Multi-currency output**: Costs are grouped by currency and presented as separate ranges — no FX conversion is applied.
-- **FSR-0028**: This file is truncated mid-table; cost is null and it is handled gracefully.
+
 
 ## What I'd Improve with More Time
 - **Incremental ingestion** — current pipeline wipes and re-embeds the full corpus on every run; track file hashes to only process changed files.
