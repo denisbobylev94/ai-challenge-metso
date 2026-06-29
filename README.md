@@ -47,9 +47,10 @@ pip install -r requirements.txt
 cp .env.example .env
 # Edit .env and add your OPENAI_API_KEY
 
-# 3. Place data files (flotation_process_data.csv is already included)
+# 3. Place data files 
 # data/Products/           — product brochure PDFs
 # data/HistoricalServices/ — FSR-XXXX.txt service reports
+# data/flotation_process_data.csv
 
 # 4. Run ingestion
 python -m ingestion.run_all
