@@ -1,4 +1,4 @@
-# Secrets — never commit, anywhere
+
 .env
 **/.env
 
@@ -21,8 +21,7 @@ venv/
 
 # Raw data — sensitive service records and large product brochures
 *.pdf
-data/Products/
-data/HistoricalServices/
+data/
 
 # Semantic cache
 cache/
