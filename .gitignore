@@ -1,0 +1,31 @@
+# Secrets — never commit, anywhere
+.env
+**/.env
+
+# Python
+*.pyc
+__pycache__/
+.pytest_cache/
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+
+# Databases and binaries — excluded globally, but keep everything in processed/
+*.db
+*.sqlite3
+*.bin
+!processed/**
+
+# Raw data — sensitive service records and large product brochures
+*.pdf
+data/Products/
+data/HistoricalServices/
+
+# Semantic cache
+cache/
+
+*.ipynb
+*.bin
